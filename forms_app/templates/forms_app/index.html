@@ -1,6 +1,11 @@
 {# Testing here #}
 {% load static %}
 <link rel="stylesheet" href="{% static 'forms_app/bootstrap.css' %}">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<div class="front-page">
+<a href="{% url 'newpost' %}" class="above-menu"><span class="glyphicon glyphicon-plus"></span> </a>
+<h1><a href="/forms">BBQ TIPS</a></h1>
 <div class="jumbotron">
 	<p>This is the forms app</p>
 </div>
@@ -13,5 +18,6 @@
 		{% else %}
 		<p>Nothing available.</p>
 	{% endif %}
+</div>
 <script src="{% static 'forms_app/jquery-3.3.1.min.js' %}"></script>
 <script src="{% static 'forms_app/bootstrap.js' %}"></script>

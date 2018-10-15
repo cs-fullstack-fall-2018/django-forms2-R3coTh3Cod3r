@@ -9,4 +9,4 @@ class FormModel(models.Model):
     dateCreated = models.DateTimeField(default=datetime.now)
 
     def __str__(self):
-        return self.name
+        return self.name + self.recipe + (str(self.timeCook))

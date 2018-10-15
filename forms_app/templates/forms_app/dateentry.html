@@ -1,0 +1,16 @@
+{% extends 'forms_app/index.html' %}
+{% block content %}
+
+<div class="post">
+    {% if post.dateCreated %}
+    <div class="date">
+        {{ post.dateCreated }}
+    </div>
+    {% endif %}
+    {#<a class="btn btn-default" href="{% url 'edit' %}"><span class="glyphicon glyphicon-pencil"></span></a>#}
+    <h1>{{post.name}}</h1>
+    <p> {{post.recipe|linebreaksbr}}</p>
+
+
+</div>
+{% endblock %}
